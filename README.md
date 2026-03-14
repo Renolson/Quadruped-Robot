@@ -40,7 +40,7 @@ suitable for robotics experimentation and education.
 # 🐕 Robot Preview
 
 <p align="center">
-<img src="images/robot.jpg" width="600">
+<img src="images/ccbu.jpg" width="600">
 </p>
 
 > Replace the image above with your robot photo.
