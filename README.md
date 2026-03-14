@@ -1,36 +1,16 @@
-```{=html}
-<p align="center">
-```
-```{=html}
-<h1 align="center">
-```
-🐾 12‑DOF Quadrupedal Robot
-```{=html}
-</h1>
-```
-```{=html}
-<p align="center">
-```
-`<b>`{=html}Development of a 12‑DOF Quadrupedal Robot with Enhanced
-Navigation`</b>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<img src="https://img.shields.io/badge/Robotics-Quadruped-blue?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/ROS-Compatible-success?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/Python-Control-yellow?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/Raspberry%20Pi-Embedded-red?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/Status-Research%20Prototype-purple?style=for-the-badge">`{=html}
-```{=html}
-</p>
-```
+<h1 align="center">🐾 12-DOF Quadrupedal Robot</h1>
 
+<p align="center">
+<b>Development of a 12-DOF Quadrupedal Robot with Enhanced Navigation</b>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Robotics-Quadruped-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ROS-Compatible-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Python-Control-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Raspberry%20Pi-Embedded-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Research%20Prototype-purple?style=for-the-badge"/>
+</p>
 ------------------------------------------------------------------------
 
 # 🤖 Project Overview
@@ -59,26 +39,20 @@ suitable for robotics experimentation and education.
 
 # 🐕 Robot Preview
 
-```{=html}
 <p align="center">
-```
-`<img src="images/robot.jpg" width="600">`{=html}
-```{=html}
+<img src="images/robot.jpg" width="600">
 </p>
-```
+
 > Replace the image above with your robot photo.
 
-------------------------------------------------------------------------
+---
 
 # 🎥 Demo
 
-```{=html}
 <p align="center">
-```
-`<img src="images/demo.gif" width="600">`{=html}
-```{=html}
+<img src="images/demo.gif" width="600">
 </p>
-```
+
 > Add a walking demo GIF of your robot here.
 
 ------------------------------------------------------------------------
@@ -272,22 +246,16 @@ Eng. S. Sampavi
 
 # ⭐ Contribution
 
-This project demonstrates that **locally engineered quadrupedal robots**
-can be developed using accessible hardware, supporting robotics research
-and education.
+This project demonstrates that **locally engineered quadrupedal robots** can be developed using accessible hardware, supporting robotics research and education.
 
-------------------------------------------------------------------------
+---
 
 # 📜 License
 
 Academic research project.
 
-------------------------------------------------------------------------
+---
 
-```{=html}
 <p align="center">
-```
 ⭐ If you like this project, consider giving it a star!
-```{=html}
 </p>
-```
