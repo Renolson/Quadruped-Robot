@@ -1,219 +1,293 @@
-# 🐾 Development of a 12-DOF Quadrupedal Robot with Enhanced Navigation
-
-🚀 A cost-effective quadrupedal robotic platform designed for stable
-locomotion on uneven and non-planar terrains using embedded control and
-torque-validated actuator design.
+```{=html}
+<p align="center">
+```
+```{=html}
+<h1 align="center">
+```
+🐾 12‑DOF Quadrupedal Robot
+```{=html}
+</h1>
+```
+```{=html}
+<p align="center">
+```
+`<b>`{=html}Development of a 12‑DOF Quadrupedal Robot with Enhanced
+Navigation`</b>`{=html}
+```{=html}
+</p>
+```
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+`<img src="https://img.shields.io/badge/Robotics-Quadruped-blue?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/ROS-Compatible-success?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/Python-Control-yellow?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/Raspberry%20Pi-Embedded-red?style=for-the-badge">`{=html}
+`<img src="https://img.shields.io/badge/Status-Research%20Prototype-purple?style=for-the-badge">`{=html}
+```{=html}
+</p>
+```
 
 ------------------------------------------------------------------------
 
-## 📌 Project Overview
+# 🤖 Project Overview
 
-Robotic mobility in unstructured environments remains a major challenge
-in robotics engineering. Traditional wheeled robots struggle on rocky
-surfaces, stairs, and irregular terrain.
+This project presents the **design and development of a
+12‑Degree‑of‑Freedom (12‑DOF) quadrupedal robot** capable of navigating
+uneven terrain.
 
-This project develops a **12-Degree-of-Freedom (12-DOF) quadrupedal
-robot** capable of stable locomotion on uneven terrain using articulated
-legs and embedded control systems.
+Traditional wheeled robots struggle on **rocky surfaces, stairs, and
+irregular ground**.\
+Legged robots provide superior mobility by adapting their footholds and
+posture.
 
-Each leg contains three actuated joints:
+Our robot uses:
 
--   Hip Roll
--   Hip Pitch
--   Knee Pitch
+-   🧠 **Raspberry Pi embedded control**
+-   ⚙️ **High‑torque servo actuators**
+-   🦾 **12 articulated joints**
+-   🖥 **Inverse kinematics based motion control**
+-   🎮 **Remote controller interface**
 
-The robot is controlled using a **Raspberry Pi based architecture** with
-servo actuators and remote control input for gait validation and terrain
-testing.
+The goal is to create a **cost‑effective quadruped research platform**
+suitable for robotics experimentation and education.
 
 ------------------------------------------------------------------------
 
-# 🤖 Robot Architecture
+# 🐕 Robot Preview
+
+```{=html}
+<p align="center">
+```
+`<img src="images/robot.jpg" width="600">`{=html}
+```{=html}
+</p>
+```
+> Replace the image above with your robot photo.
+
+------------------------------------------------------------------------
+
+# 🎥 Demo
+
+```{=html}
+<p align="center">
+```
+`<img src="images/demo.gif" width="600">`{=html}
+```{=html}
+</p>
+```
+> Add a walking demo GIF of your robot here.
+
+------------------------------------------------------------------------
+
+# ✨ Key Features
+
+  Feature                         Description
+  ------------------------------- -----------------------------------------
+  🦾 12‑DOF Leg Design            3 joints per leg for natural locomotion
+  🧠 Embedded Control             Raspberry Pi based architecture
+  ⚙️ Torque‑Validated Actuation   Analytical actuator selection
+  🎮 Remote Control               PS4 controller / keyboard input
+  🧩 Modular Design               Easy upgrades for future research
+  🌍 Terrain Adaptability         Handles uneven surfaces and slopes
+
+------------------------------------------------------------------------
+
+# 🧠 System Architecture
 
     User Input (PS4 Controller / Keyboard)
                 │
                 ▼
-          Raspberry Pi
+          Raspberry Pi Controller
                 │
-         Gait Controller
+          Gait Controller
                 │
-         Inverse Kinematics
+          Inverse Kinematics
                 │
-         Hardware Interface
+          Hardware Interface
                 │
             Servo Driver
                 │
             Servo Motors
-
-The architecture integrates motion planning, joint coordination, and
-hardware communication in a modular control pipeline.
 
 ------------------------------------------------------------------------
 
 # ⚙️ Robot Specifications
 
   Parameter            Value
-  -------------------- --------------------
-  Degrees of Freedom   12 DOF (3 per leg)
+  -------------------- ------------------
+  Degrees of Freedom   12 DOF
+  Leg Configuration    3 joints per leg
   Body Length          380 mm
   Body Width           250 mm
   Shoulder Height      250 mm
   Thigh Length         140 mm
   Shank Length         140 mm
-  Total Mass           \~3 kg
+  Robot Mass           \~3 kg
   Payload Capacity     \~0.5 kg
 
 ------------------------------------------------------------------------
 
-# 🦾 Hardware Components
+# 🔧 Hardware Components
 
-### Embedded System
+## Embedded Controller
 
--   Raspberry Pi (Main Controller)
+-   Raspberry Pi
 
-### Actuators
+## Actuators
 
 -   STS3215 Serial Servo
 -   35kg PWM Servo
 
-### Mechanical Structure
+## Mechanical Structure
 
--   3D printed using **Polycarbonate (PC) filament**
+-   3D printed polycarbonate components
 
-### Communication
+## Communication
 
--   I2C communication with servo driver
--   PWM signals for servo control
-
-------------------------------------------------------------------------
-
-# 🧠 Control System
-
-### 1️⃣ Input Interface
-
-Receives commands from: - PS4 Controller - Keyboard
-
-### 2️⃣ Gait Controller
-
-Implements motion modes: - Trotting gait - Rest posture control
-
-### 3️⃣ Inverse Kinematics
-
-Converts foot position to joint angles for each leg.
-
-### 4️⃣ Hardware Interface
-
-Responsible for: - Joint angle validation - Signal conversion - Servo
-command transmission
+-   I2C servo communication
+-   PWM servo control
 
 ------------------------------------------------------------------------
 
-# 🧪 Testing and Validation
+# 🧮 Torque Validation
 
-### Static Testing
+Joint torque was analytically calculated to ensure proper actuator
+selection.
 
--   Posture stability
--   Joint limit validation
--   Load bearing verification
-
-### Dynamic Testing
-
--   Forward walking
--   Turning maneuvers
--   Incline traversal
-
-### System Monitoring
-
--   Servo temperature monitoring
--   Power consumption analysis
-
-The robot successfully demonstrated **stable locomotion and controlled
-walking on flat and inclined surfaces.**
-
-------------------------------------------------------------------------
-
-# 📊 Torque Analysis
-
-Example calculation:
+Example:
 
 τ = m × g × L
 
 For the knee joint:
 
-τ = 1.5 × 9.81 × 0.14 ≈ 2.06 Nm
+τ ≈ 2.06 Nm
 
-The selected servo motors provide torque values higher than calculated
-requirements, ensuring reliable operation.
+Selected actuators provide **higher torque than required**, ensuring
+stable operation.
+
+------------------------------------------------------------------------
+
+# 🧪 Testing
+
+The robot was tested through several stages:
+
+### Static Testing
+
+-   Posture validation
+-   Load‑bearing verification
+-   Joint limit testing
+
+### Dynamic Testing
+
+-   Forward walking
+-   Turning
+-   Incline traversal
+
+### Monitoring
+
+-   Servo temperature
+-   Power consumption
+
+The robot successfully demonstrated **stable walking and controlled
+locomotion**.
 
 ------------------------------------------------------------------------
 
 # 🌍 Applications
 
-Quadrupedal robots like this can be used in:
+Quadrupedal robots can be used in:
 
--   Disaster inspection
--   Search and rescue missions
--   Rough terrain exploration
--   Agricultural monitoring
--   Industrial inspection in hazardous environments
+-   🚨 Disaster inspection
+-   🧭 Rough terrain exploration
+-   🌾 Agricultural monitoring
+-   🏭 Industrial inspection
+-   🔍 Search and rescue missions
 
 ------------------------------------------------------------------------
 
-# 🔬 Future Improvements
+# 🔮 Future Work
 
-Planned extensions include:
+Future improvements may include:
 
--   Vision-based obstacle detection
--   SLAM navigation
--   IMU-based balance stabilization
+-   Computer vision navigation
+-   SLAM based localization
+-   IMU stabilization
 -   Autonomous path planning
 -   Advanced gait optimization
 
 ------------------------------------------------------------------------
 
+# 📂 Repository Structure
+
+    quadruped-robot
+    │
+    ├── CAD
+    │   ├── body_design
+    │   └── leg_components
+    │
+    ├── firmware
+    │   └── servo_control
+    │
+    ├── control
+    │   ├── gait_controller
+    │   └── inverse_kinematics
+    │
+    ├── simulation
+    │   └── gazebo
+    │
+    ├── electronics
+    │   └── wiring_diagrams
+    │
+    ├── images
+    │   ├── robot.jpg
+    │   └── demo.gif
+    │
+    └── README.md
+
+------------------------------------------------------------------------
+
 # 🎓 Academic Information
 
-**Bachelor of Science in Engineering (Honours)**\
+**BSc Engineering (Hons)**\
 Department of Electrical and Telecommunication Engineering\
-Faculty of Engineering\
 South Eastern University of Sri Lanka
 
 ### Authors
 
--   Balakumar Premamyuresan\
--   Sahayanathan Renolson\
--   Jeyapalasingam Jeluxshan
+Balakumar Premamyuresan\
+Sahayanathan Renolson\
+Jeyapalasingam Jeluxshan
 
 ### Supervisors
 
--   Dr. W.G.C.W Kumara\
--   Dr. Ajmal Hinas\
--   Eng. S. Sampavi
+Dr. W.G.C.W Kumara\
+Dr. Ajmal Hinas\
+Eng. S. Sampavi
 
 ------------------------------------------------------------------------
 
-# 📂 Repository Structure (Example)
+# ⭐ Contribution
 
-    quadruped-robot/
-    │
-    ├── README.md
-    ├── CAD/
-    ├── firmware/
-    ├── control/
-    ├── simulation/
-    ├── electronics/
-    └── docs/
-
-------------------------------------------------------------------------
-
-# ⭐ Project Contribution
-
-This project demonstrates that a locally engineered quadrupedal robot
-can be developed using accessible hardware and analytical design
-validation, supporting robotics research and education.
+This project demonstrates that **locally engineered quadrupedal robots**
+can be developed using accessible hardware, supporting robotics research
+and education.
 
 ------------------------------------------------------------------------
 
 # 📜 License
 
-This project is intended for **academic and research purposes**.
+Academic research project.
+
+------------------------------------------------------------------------
+
+```{=html}
+<p align="center">
+```
+⭐ If you like this project, consider giving it a star!
+```{=html}
+</p>
+```
