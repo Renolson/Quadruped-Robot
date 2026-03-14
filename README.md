@@ -43,17 +43,8 @@ suitable for robotics experimentation and education.
 <img src="images/robot.jpg" width="600">
 </p>
 
-> Replace the image above with your robot photo.
-
----
-
-# 🎥 Demo
-
-<p align="center">
-<img src="images/demo.gif" width="600">
-</p>
-
-> Add a walking demo GIF of your robot here.
+> This is a 3D design inspired and altered from the Open Source 3D model- DINGO THE ROBOT DOG.
+> Credits Goes to the respective owners
 
 ------------------------------------------------------------------------
 
